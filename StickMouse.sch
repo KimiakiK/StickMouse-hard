@@ -5,9 +5,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Stick Mouse"
-Date "2021-02-01"
-Rev "V1.0"
-Comp ""
+Date "2021-03-21"
+Rev "V1.1"
+Comp "https://github.com/KimiakiK"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -41,7 +41,7 @@ U 1 1 6013E594
 P 8100 2550
 F 0 "SW1" H 8100 2850 50  0000 C CNN
 F 1 "BTN_LEFT" H 8100 2750 50  0000 C CNN
-F 2 "StickMouse:SW_PUSH-12mm_Custom" H 8100 2750 50  0001 C CNN
+F 2 "StickMouse:Kailh_Mute_Switch" H 8100 2750 50  0001 C CNN
 F 3 "~" H 8100 2750 50  0001 C CNN
 	1    8100 2550
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 6013EAB3
 P 8100 3000
 F 0 "SW2" H 8100 3300 50  0000 C CNN
 F 1 "BTN_RIGHT" H 8100 3200 50  0000 C CNN
-F 2 "StickMouse:SW_PUSH-12mm_Custom" H 8100 3200 50  0001 C CNN
+F 2 "StickMouse:Kailh_Mute_Switch" H 8100 3200 50  0001 C CNN
 F 3 "~" H 8100 3200 50  0001 C CNN
 	1    8100 3000
 	1    0    0    -1  
@@ -74,7 +74,7 @@ U 1 1 60171835
 P 3000 2600
 F 0 "U1" H 3000 2842 50  0000 C CNN
 F 1 "NJM78L33SU3" H 3000 2751 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3_Handsoldering" H 3000 2825 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3000 2825 50  0001 C CIN
 F 3 "" H 3000 2550 50  0001 C CNN
 	1    3000 2600
 	1    0    0    -1  
@@ -524,4 +524,43 @@ NoConn ~ 6300 3250
 NoConn ~ 6300 3150
 NoConn ~ 5950 2400
 NoConn ~ 5850 2400
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6056C6FB
+P 9500 3850
+F 0 "TP1" V 9500 4050 50  0000 L CNN
+F 1 "BTN" V 9500 4250 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9700 3850 50  0001 C CNN
+F 3 "~" H 9700 3850 50  0001 C CNN
+	1    9500 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 9500 3850 0    50   Input ~ 0
+JOYSTICK_BTN
+Text GLabel 9500 4000 0    50   Input ~ 0
+JOYSTICK_V
+Text GLabel 9500 4150 0    50   Input ~ 0
+JOYSTICK_H
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60571174
+P 9500 4000
+F 0 "TP2" V 9500 4200 50  0000 L CNN
+F 1 "V" V 9500 4400 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9700 4000 50  0001 C CNN
+F 3 "~" H 9700 4000 50  0001 C CNN
+	1    9500 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60571686
+P 9500 4150
+F 0 "TP3" V 9500 4350 50  0000 L CNN
+F 1 "H" V 9500 4550 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9700 4150 50  0001 C CNN
+F 3 "~" H 9700 4150 50  0001 C CNN
+	1    9500 4150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
