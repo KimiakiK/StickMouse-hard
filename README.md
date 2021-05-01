@@ -13,6 +13,7 @@
 
 # Photos
 ![Stick Mouse V1.1](https://github.com/KimiakiK/StickMouse-hard/blob/images/StickMouse_V11.jpg)
+![Stick Mouse example](https://github.com/KimiakiK/StickMouse-hard/blob/images/StickMouse_example.jpg)
 
 ## PCB
 - V1.1
